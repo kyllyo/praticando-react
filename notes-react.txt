@@ -1,0 +1,44 @@
+COD3R
+React
+
+1) Visão Geral e Instalacao
+	1.1 - WebPack
+		- npm init -y (cria o arquivo package.json)
+		- npm i --save-dev webpack@1.14.0 webpack-dev-server@1.16.2
+	1.2 - subindo o servidor
+		- npm run dev
+	
+2) Comando para visualizar o bundle.js
+	- ./node_modules/.bin/webpack
+
+3) Adicionando biblioteca babel:
+	- npm i --save-dev babel-core@6.22.1 babel-loader@6.2.10 babel-preset-es2015@6.22.0
+
+4) Adicionando biblioteca operador spread:
+	- npm i --save-dev babel-plugin-transform-object-rest-spread@6.22.0
+
+5) Adicionando o react no webpack
+	- npm i --save-dev react@15.4.2
+	- npm i --save-dev babel-preset-react@6.22.0
+
+6) Adicionando dependencias para a utilizacao do css
+	- npm i --save-dev extract-text-webpack-plugin@1.0.1 style-loader@0.13.1 css-loader@0.26.1
+
+7) Estado Controlado / Estado Não Controlado
+	- No Angular temos um componente na DOM e outro no Java Script. Two Way Data Binding, permite que se modificar o componente na DOM, essa mudança seja refletida no Java Script, e vice-versa.
+	- No React não temos isso.
+	- No React temos o estado Controlado: Só o Java Script controla. Então as mudanças são refletidas automaticamente. Quando o estado do componente é modificado, ele é renderizado novamente na página.
+	- No React temos o estado Não Controlado: Você consegue modificar a DOM, mas sua mudança nunca é refletida para o Java Script.
+
+8) Criando o backend
+	- npm init -y (criando o package.json)
+	- npm i --save -E body-parser@1.15.2 (-E é a versão exata)(--save copia os modulos necessarios para o desenvolvimento e produção)
+	- npm i --save -E express@4.14.0 mongoose@4.7.0 node-restful@0.2.5 pm2@2.1.5
+	- npm i --save-dev -E nodemon@1.11.0 (--save-dev copia os modulos necessarios para o desenvolvimento)
+	- express (é o servidor web que roda em cima do node. A maioria usa. Padrão de mercado)
+
+9) Como baixar as dependencias definidas no package.json ? Caso você não tenha a pasta node_modules.
+	- npm i
+	- Fazendo analogia o package.json é o pom.xml e o npm o maven.
+	
+	

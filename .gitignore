@@ -1,0 +1,4 @@
+/todo-app/backend/node_modules
+*.log
+/exercicios_webpack/node_modules
+/exercicios_react/node_modules
